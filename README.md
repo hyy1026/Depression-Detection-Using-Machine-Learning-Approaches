@@ -38,8 +38,8 @@ This folder contains the implementation of the proposed **HEAT (Hybrid Energy-At
 Each notebook corresponds to one dataset.
 | Notebook | Dataset |
 |----------|---------|
-| HEAT_D1.ipynb | Dataset 1 |
-| HEAT_D2.ipynb | Dataset 2 |
+| HEAT_D1.ipynb | Dataset 1 (Reddit Dataset)|
+| HEAT_D2.ipynb | Dataset 2 (Mental Health Dataset)|
 | HEAT_D3.ipynb | Dataset 3 (DAIC-WOZ) |
 Run the notebook corresponding to the dataset you wish to reproduce.
 
@@ -69,3 +69,73 @@ pip install tqdm
 pip install emoji
 ```
 Additional libraries may be required depending on the notebook.
+
+# How to Run
+
+## Step 1
+
+Download the datasets from Kaggle.
+
+The Kaggle repository contains:
+
+- Original datasets
+- Training datasets
+- Validation datasets
+- Testing datasets
+
+Kaggle Dataset:
+
+https://kaggle.com/datasets/ee25765f37847f78000ef7aecdb36a795539cf8cd8672c0f6e314edd48254d41
+
+---
+
+## Step 2
+
+Modify all dataset paths in the preprocessing notebooks to match your local directory.
+
+---
+
+## Step 3
+
+Run the preprocessing notebook.
+
+- `D1_D2_PREPROCESS.ipynb`
+- `DAIC_PREPROCESS.ipynb`
+
+---
+
+## Step 4
+
+Run the corresponding model notebook.
+
+- `HEAT_D1.ipynb`
+- `HEAT_D2.ipynb`
+- `HEAT_D3.ipynb`
+
+Execute all notebook cells sequentially.
+
+---
+
+# Hardware Recommendation
+
+Recommended environment:
+
+- Google Colab
+- NVIDIA A100 GPU
+
+The experimental results reported in the dissertation were reproduced using the above hardware configuration.
+
+---
+
+# Notes
+
+- All source code is provided in Jupyter Notebook (`.ipynb`) format.
+- Please update all dataset paths before running the notebooks.
+- Different hardware environments may produce slight variations in training time and evaluation results.
+- GPU is highly recommended for model training and reproduction.
+
+---
+
+# Contact
+
+For any questions regarding this repository, please contact the project author.
